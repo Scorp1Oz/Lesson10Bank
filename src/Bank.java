@@ -1,6 +1,6 @@
 public class Bank {
-   final private String name;
-   final private double exchangeRate;
+    final private String name;
+    final private double exchangeRate;
 
     public Bank(String name, double exchangeRate) {
         this.name = name;
@@ -17,6 +17,10 @@ public class Bank {
 
     public double calculateAmountInUAH(double dollars) {
         return dollars * exchangeRate;
+    }
+
+    public double calculateDollarsFromUAH(double uah) {
+        return uah / exchangeRate;
     }
 }
 
